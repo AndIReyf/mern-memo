@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="021584c0-07bd-4d20-8f3f-60f2bc4990bf" name="Default Changelist" comment="feat: add styles">
+      <change afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/actions/posts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/api/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/reducers/posts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/store/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/thunk/posts.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/app/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/form/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/form/Form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/posts/Posts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/posts/Posts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1kkH18Wk3phqUeMMxfCeJA4Axdm" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.19.4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/reducers" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="ts.external.directory.path" value="D:\React\mern-memo\client\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\React\mern-memo\client\src\reducers" />
+      <recent name="D:\React\mern-memo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\React\mern-memo\client\src\components\app" />
+      <recent name="D:\React\mern-memo\server" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="021584c0-07bd-4d20-8f3f-60f2bc4990bf" name="Default Changelist" comment="" />
+      <created>1606237452019</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606237452019</updated>
+      <workItem from="1606237453198" duration="1072000" />
+      <workItem from="1606238709688" duration="11230000" />
+      <workItem from="1606305311365" duration="4804000" />
+      <workItem from="1606334141326" duration="4944000" />
+      <workItem from="1606393377605" duration="11308000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: add styles">
+      <created>1606255611868</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606255611868</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="feat: add styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add styles" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="506" y="189" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606305380839">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="506" y="189" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1606305380839" />
+    <state x="433" y="103" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606239871625">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="433" y="103" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1606239871625" />
+  </component>
+</project>
