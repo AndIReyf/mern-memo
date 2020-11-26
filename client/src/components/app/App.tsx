@@ -4,9 +4,16 @@ import {AppBar, Container, Grid, Grow, Typography} from "@material-ui/core";
 import {Form} from "../form/Form";
 import {Posts} from "../posts/Posts";
 import useStyles from '../../styles'
+import {useDispatch} from "react-redux";
+import {fetchPosts} from "../../thunk/posts";
 
 export const App = React.memo(function App() {
     const classes = useStyles()
+    const dispatch = useDispatch()
+
+    React.useEffect(() => {
+        dispatch(fetchPosts())
+    }, [dispatch])
 
     return (
         <Container maxWidth='lg'>
