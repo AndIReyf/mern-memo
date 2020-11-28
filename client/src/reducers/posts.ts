@@ -10,6 +10,10 @@ const postReducer = (state: PostsType = initState, action: ActionType): PostsTyp
         case "CREATE_POST": {
             return [...state, action.post]
         }
+        case "UPDATE_POST": {
+            return state.map(post => post._id === action.updatedPost._id
+                ? action.updatedPost : post)
+        }
         default:
             return state
     }
@@ -19,6 +23,7 @@ const postReducer = (state: PostsType = initState, action: ActionType): PostsTyp
 export type PostsType = Array<PostType>
 
 export type PostType = {
+    _id: string
     title: string
     message: string
     creator: string

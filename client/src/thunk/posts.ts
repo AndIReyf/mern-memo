@@ -23,3 +23,14 @@ export const createPost = (newPost: NewPostType) => async (dispatch: Dispatch) =
         console.log(e)
     }
 }
+
+export const updatePost = (id: string, updatedPost: NewPostType) => async (dispatch: Dispatch) => {
+    try {
+        const {data} = await api.updatePost(id, updatedPost)
+
+        dispatch(action.updatePost(data))
+
+    } catch (e) {
+        console.log(e)
+    }
+}

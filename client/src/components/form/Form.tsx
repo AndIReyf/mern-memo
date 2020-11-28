@@ -4,28 +4,48 @@ import {Paper, Typography, TextField, Button} from "@material-ui/core";
 //@ts-ignore
 import FileBase from 'react-file-base64'
 import {NewPostType} from "../../api";
-import {useDispatch} from "react-redux";
-import { createPost } from "../../thunk/posts";
+import {useDispatch, useSelector} from "react-redux";
+import {createPost, updatePost} from "../../thunk/posts";
+import {RootReducer} from "../../store/store";
+import {PostsType} from "../../reducers/posts";
 
-export function Form() {
+export function Form({currentId, setCurrentId}: PropsType) {
     const classes = useStyles()
     const dispatch = useDispatch()
+    const posts = useSelector<RootReducer, PostsType>(state => state.posts)
 
     const [postData, setPostData] = React.useState<NewPostType>({
-        title: '', creator: '', message: '', tags: '', selectedFile: ''
+        title: '', creator: '', message: '', tags: [], selectedFile: ''
     })
+
+    React.useEffect(() => {
+        if (currentId) {
+            const post = posts.find(p => p._id === currentId)
+            if (post) setPostData(post)
+        }
+    }, [currentId, posts])
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
 
-        dispatch(createPost(postData))
+        if (currentId) {
+            dispatch(updatePost(currentId, postData))
+        } else {
+            dispatch(createPost(postData))
+        }
+
+        clearFields()
     }
+
+    const fileBaseHandler = (base64: any) => setPostData({...postData, selectedFile: base64})
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setPostData({...postData, [e.target.name]: e.target.value})
     }
 
-    const clear = () => {
+    const clearFields = () => {
+        setCurrentId('')
+        setPostData({title: '', creator: '', message: '', tags: [], selectedFile: ''})
     }
 
     return (
@@ -33,7 +53,7 @@ export function Form() {
             <form autoComplete='off' noValidate onSubmit={handleSubmit}
                   className={`${classes.root} ${classes.form}`}
             >
-                <Typography variant='h6'>Creat a post</Typography>
+                <Typography variant='h6'>{`${currentId ? 'Editing' : 'Creating'} a post`}</Typography>
                 <TextField name='creator' fullWidth variant='outlined' label='Creator'
                            value={postData.creator} onChange={handleChange}
                 />
@@ -48,7 +68,7 @@ export function Form() {
                 />
                 <div className={classes.fileInput}>
                     <FileBase type='file' multiple={false}
-                              onDone={({base64}: any) => setPostData({...postData, selectedFile: base64})}
+                              onDone={({base64}: any) => fileBaseHandler(base64)}
                     />
                 </div>
                 <Button className={classes.buttonSubmit} variant='contained' color='primary'
@@ -57,11 +77,16 @@ export function Form() {
                     Submit
                 </Button>
                 <Button className={classes.buttonSubmit} variant='contained' color='secondary'
-                        size='small' fullWidth onClick={clear}
+                        size='small' fullWidth onClick={clearFields}
                 >
                     Clear
                 </Button>
             </form>
         </Paper>
     )
+}
+
+type PropsType = {
+    currentId: string
+    setCurrentId: (id: string) => void
 }
